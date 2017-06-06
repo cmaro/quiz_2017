@@ -42,7 +42,7 @@ exports.index = function (req, res, next) {
         var findOptions = {
             offset: items_per_page * (pageno - 1),
             limit: items_per_page,
-            order: ['username']
+            order: ['username'] 
         };
 
         return models.User.findAll(findOptions);
